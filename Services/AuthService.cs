@@ -15,7 +15,7 @@ namespace bands_in_town_api.Services
 
     public AuthService(IConfiguration configuration)
     {
-      KEY = configuration["JWT-KEY"];
+      KEY = configuration["SECRET"];
     }
 
     public AuthenticatedData CreateToken(Models.User user)

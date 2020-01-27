@@ -1,7 +1,7 @@
-docker build -t sdg-sample-api-template .
+docker build -t bands-in-town-api-image .
 
-docker tag sdg-sample-api-template registry.heroku.com/sdg-sample-api-template/web
+docker tag bands-in-town-api-image registry.heroku.com/bands-in-town-api/web
 
-docker push registry.heroku.com/sdg-sample-api-template/web
+docker push registry.heroku.com/bands-in-town-api/web
 
-heroku container:release web -a sdg-sample-api-template
+heroku container:release web -a bands-in-town-api

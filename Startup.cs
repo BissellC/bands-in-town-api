@@ -48,7 +48,7 @@ namespace bands_in_town_api
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["JWT-KEY"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["SECRET"]))
                   };
                 });
     }
